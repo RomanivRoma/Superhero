@@ -15,7 +15,7 @@ app.use(cors())
 const db = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    password: 'Vt;bushcmrf',
+    password: 'password',
     database: 'superhero_app',
     multipleStatements: true
 })
