@@ -1,6 +1,8 @@
 # Superhero
 
 This is Superhero simple app on React.
+NodeJS and MySQL were used on backend. React on frontend.
+This app is using CRUD. You can create and uploading images, change delete and view the superhero you want. 
 
 # Starting client in developent mode
 
