@@ -2,7 +2,7 @@
 
 This is Superhero simple app on React.
 
-# Starting client
+# Starting client in developent mode
 
 Go to client folder and start the command in console.
 
@@ -20,4 +20,4 @@ Go to server folder and start the command in console.
 
 ### `npm run dev`
 
-The server start on 3001 host.
+The server starts on 3001 host.
