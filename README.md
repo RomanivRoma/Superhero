@@ -1,5 +1,7 @@
 # Superhero
 
+This is Superhero simple app on React.
+
 # Starting client
 
 Go to client folder and start the command in console.
