@@ -1,0 +1,58 @@
+.hero__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    word-break: break-all;
+}
+.hero__item:hover .hero__item__wrapper{
+    transform: scale(1.05);
+}
+.hero__item__wrapper{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    transition: .3s; 
+}
+.hero__item .hero__name{
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+.hero__item .hero__img{    
+    width: 550px;
+    max-width: 40%;
+    height: 100%;
+}
+.hero__edit{
+    transition: .2s ease-in;
+}
+.hero__edit:hover{
+    transform: rotate(-25deg);
+}
+.buttonsWrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero__delete{
+    transition: .3s;
+}
+.hero__delete:hover{
+    transform: rotate(270deg);
+}
+@media screen and (max-width: 995px) {
+    .hero__item .hero__img{    
+        width: 400px;
+    }
+}
+@media screen and (max-width: 805px) {
+    .hero__item .hero__img{    
+        width: 300px;
+    }
+}
+

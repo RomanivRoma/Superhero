@@ -1,0 +1,32 @@
+.heroPage__wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.slider{
+    margin-bottom: 20px;
+}
+.slider__image__container{
+    height: 300px;
+}
+.hero__title{
+    text-align: center;
+    font-size: 60px;
+    margin: 10px auto;
+    color: firebrick;
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.heroInfo{
+    display: flex;
+    flex-direction: column;
+}
+.heroInfo__item{
+    margin: 0;
+    font-size: 22px;
+}
+.heroInfo__item__info{
+    font-weight: 700;
+}

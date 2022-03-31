@@ -1,0 +1,161 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200, .35);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    overflow: auto;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .modalContainer .title h1{
+    margin: 0;
+  }
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 20px 0  ;
+    gap: 35px;
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }
+  
+  .input__wrapper{
+      display: flex;
+      gap: 10px;
+  }
+  .input__container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+
+  .modalContainer .body textarea,
+  .modalContainer .body input {
+    /* background-color: #303245; */
+    /* background: linear-gradient(-11deg, rgba(55,37,37,1) 0%, rgba(116,7,7,1) 25%, rgba(208,0,0,1) 90%); */
+    background: rgb(232, 240, 254);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+    font-size: 20px;
+    resize: vertical;
+    min-height: 50px;
+  }
+  .modalContainer .body textarea{
+    padding: 13px;
+  }
+  .cut {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    /* width: 76px; */
+    /* opacity: 0; */
+    color: transparent;
+  }
+  .cut span{
+    visibility: hidden;
+  }
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #000;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+    background: none;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #000;
+  }
+  

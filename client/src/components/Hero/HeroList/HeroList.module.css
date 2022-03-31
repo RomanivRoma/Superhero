@@ -1,0 +1,19 @@
+.hero__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.addButton__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.addButton:hover{
+    opacity: .7;
+}
+.addButton{
+    cursor: pointer;
+    transition: .2s;
+    width: 55px;
+    height: 55px;
+}

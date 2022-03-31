@@ -1,0 +1,76 @@
+#root{
+  min-height: 96vh;
+  background: linear-gradient(0deg, rgba(55,37,37,1) 30%, rgba(116,7,7,1) 45%, rgba(208,0,0,1) 90%);
+  padding: 2vh 0;
+}
+.App{
+  background-color: #fff;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 70px ;
+  overflow: hidden;
+  padding: 0 0 20px;
+}
+.App__header {
+  margin-top: 10px;
+}
+.App__header h2{
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  color: #000;
+}
+.App_header__wrapper{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  width: 60px;
+  height: 60px;
+}
+.edit, .delete{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+/* slider styles start */
+.slick-next:before, .slick-prev:before{
+  color: dimgray !important;
+}
+.slick-list {margin: 0 -10px;}
+.slick-slide>div {padding: 0 10px;}
+.slick-next{right: -35px;}
+.slick-prev{left: -35px;}
+/* slider styles end */
+
+/* file uploader styles start */
+.dzu-previewImage{
+  width: 100% !important;
+  max-height: unset !important;
+}
+.dzu-dropzone{
+  overflow: auto !important; 
+  padding-bottom: 10px;
+}
+
+/* file uploader styles end */
+.pagination{
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 1600px) {
+  .App{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .App{
+      margin: 0 30px;
+  }
+
+}
